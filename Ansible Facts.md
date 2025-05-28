@@ -47,4 +47,13 @@
 	msg: "{{ ansible_facts['devices']['vda']['partitions']['vda3']['size'] }}"
 
 
+
+### Filtering ansible_facts using "gather_subset="  and "filter="
+
+### " ansible-doc setup " will help more details for "gather_subset" and "filter"
+
+  	ansible -i /root/ansible_tasks/nodes ansible-host-01 -m setup -a "filter=ansible_lvm"  
+	ansible -i /root/ansible_tasks/nodes ansible-host-01 -m setup -a "gather_subset=ansible_network"
+
+
 	
