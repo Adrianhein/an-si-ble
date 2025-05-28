@@ -1,0 +1,11 @@
+---
+- hosts: rpm-group,ansible-host-03
+  gather_facts: False 
+  vars_files:
+    - /root/an-si-ble/sample/sample_complex_vars/complex_vars-01.yaml 
+  tasks:
+    - name: Displaying Complex Variables
+      debug: 
+        msg: "{{ users }}"
+...
+

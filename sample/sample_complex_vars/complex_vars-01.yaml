@@ -1,0 +1,7 @@
+---
+users:
+  - name: John
+    age: 35
+  - name: Lisa
+    age: 33
+...
