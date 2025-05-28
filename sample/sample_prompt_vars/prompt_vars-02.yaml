@@ -1,0 +1,16 @@
+---
+- hosts: ansible-host-03
+  gather_facts: False 
+  vars_prompt:
+    - name: Username
+      prompt: Enter Username
+      private: no
+  tasks:
+    - name: Create User # Displaying Complex Prompt Variables
+      user:
+        name: "{{ Username}}"
+        state: present
+...
+
+#private: no
+#private: yes

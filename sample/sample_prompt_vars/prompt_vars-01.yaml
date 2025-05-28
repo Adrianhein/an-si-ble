@@ -1,0 +1,15 @@
+---
+- hosts: rpm-group,ansible-host-03
+  gather_facts: False 
+  vars_prompt:
+    - name: var
+      prompt: Enter Value
+      private: no
+  tasks:
+    - name: Displaying Complex Prompt Variables
+      debug: 
+        msg: "{{ var }}"
+...
+
+#private: no
+#private: yes
