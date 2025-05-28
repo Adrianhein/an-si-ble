@@ -3,5 +3,12 @@
   tasks:
     - name: Displaying facts variables
       debug:
-        msg: "{{ ansible_facts }}"
+        #msg: "{{ ansible_facts.all_ipv4_addresses[0] }}"
+        msg: "{{ ansible_facts.nodename }}"
+        #msg: "{{ ansible_nodename }}"
+        #msg: "{{ ansible_facts.all_ipv4_addresses }}"
 ...
+#
+#ansible -i /root/ansible_tasks/nodes ansible-host-01 -m setup | grep ansible_
+#
+#

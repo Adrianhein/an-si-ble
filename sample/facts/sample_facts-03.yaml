@@ -1,0 +1,23 @@
+---
+- hosts: ansible-host-01
+  tasks:
+    - name: Displaying facts variables
+      debug:
+        #msg: "{{ ansible_facts }}"
+        #msg: "{{ ansible_devices }}"
+        #msg: "{{ ansible_devices.vda }}"
+        #msg: "{{ ansible_devices.vda.partitions }}"
+        #msg: "{{ ansible_devices.vda.partitions.vda1 }}"
+        #msg: "{{ ansible_devices.vda.partitions.vda3.size }}"
+        #msg: "{{ ansible_devices['vda']['partitions']['vda3']['size'] }}"
+        msg: "{{ ansible_facts['devices']['vda']['partitions']['vda3']['size'] }}"
+...
+
+## Same expression
+#
+##msg: "{{ ansible_devices.vda.partitions.vda3.size }}"
+#Or
+#msg: "{{ ansible_devices['vda']['partitions']['vda3']['size'] }}"
+#Or
+#msg: "{{ ansible_facts['devices']['vda']['partitions']['vda3']['size'] }}"
+#
