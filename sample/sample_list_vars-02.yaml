@@ -1,0 +1,13 @@
+---
+- hosts: rpm-group,ansible-host-03
+  gather_facts: False 
+  vars: 
+      list:
+        - item1
+        - item2
+        - item3
+  tasks:
+    - name: Displaying List Variables
+      debug: 
+        msg: "{{ list[2] }}"
+... 

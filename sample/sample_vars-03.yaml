@@ -1,0 +1,10 @@
+---
+- hosts: rpm-group,ansible-host-03 
+  gather_facts: False
+  vars: 
+      key: value
+  tasks:
+    - name: Displaying
+      debug: 
+        msg: "{{ key }}"
+... 

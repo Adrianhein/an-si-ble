@@ -1,0 +1,37 @@
+---
+- hosts: rpm-group,ansible-host-03
+  gather_facts: False 
+  vars: 
+      users:
+        - name: Messi #item1
+          age: 37
+        - name: C.Ronaldo #item2
+          age: 38
+        - name: Neyma #item3
+          age: 33
+  tasks:
+    - name: Displaying List Variables
+      debug: 
+        msg: "{{ users[0].name }}"
+...
+
+#  tasks:
+#   - name: Displaying List Variables
+#     debug:
+#       msg: "{{ users }}"
+
+#################
+
+#  tasks:
+#   - name: Displaying List Variables
+#     debug:
+#       msg: "{{ users[0] }}"
+
+#################
+
+#  tasks:
+#   - name: Displaying List Variables
+#     debug:
+#       msg: "{{ users[0].name }}"
+
+#################

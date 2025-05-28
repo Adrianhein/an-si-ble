@@ -1,0 +1,9 @@
+---
+- hosts: rpm-group,ansible-host-03 
+  vars: 
+      username: Mark
+  tasks:
+    - name: Displaying
+      debug: 
+        msg: "{{ username }}"
+... 

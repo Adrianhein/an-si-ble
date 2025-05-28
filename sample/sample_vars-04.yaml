@@ -1,0 +1,32 @@
+---
+- hosts: rpm-group,ansible-host-03 
+  gather_facts: False
+  vars:
+      dict:
+        key1: value1
+        key2: value2
+  tasks:
+    - name: Displaying
+      debug: 
+        msg: "{{ dict['key2'] }}"
+...
+
+# Other form of usage
+#tasks:
+    #- name: Displaying
+      #debug:
+        #msg: "{{ dict }}"
+        #####
+
+
+#  tasks:
+#- name: Displaying
+      #debug:
+       #msg: "{{ dict.key1 }}"
+
+
+#  tasks:
+#   - name: Displaying
+#     debug:
+#       msg: "{{ dict['key2'] }}"
+
