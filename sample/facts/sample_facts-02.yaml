@@ -1,0 +1,7 @@
+---
+- hosts: ansible-host-01
+  tasks:
+    - name: Displaying facts variables
+      debug:
+        msg: "{{ ansible_facts }}"
+...
