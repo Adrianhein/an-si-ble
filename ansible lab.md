@@ -1,8 +1,9 @@
 ###
 
-	192.168.124.242 ansible-host
-	192.168.124.91 ansible-host-01
-	192.168.124.79 ansible-host-02
-	192.168.124.170 ansible-host-03
-	192.168.124.128 ansible-host-04
+	192.168.100.10 ansible-control-node
+	192.168.100.20 ansible-managed-node
+	
+ 	192.168.100.xxx ansible-host-02
+	192.168.124.xxx ansible-host-03
+	192.168.124.xxx ansible-host-04
 
