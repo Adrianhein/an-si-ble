@@ -16,6 +16,10 @@
  	ansible First_group -m command -a "uptime"     ##<< this will output all remote hosts uptime of "First_group"
   	ansible 192.168.100.20 -m command -a "uptime"  ##<< this will output only one remote host's uptime
 
+ 	ansible all -m command -a "cat /etc/fstab" -f 1
+   	ansible all -m command -a "cat /etc/passwd" -l First_group
+    	
+
 ###  " ansible --help | more " to see how to use to combine with ansible ad-hoc command for quick task
   
         [admin@my-infra-01 an-si-ble]$ ansible --help 
