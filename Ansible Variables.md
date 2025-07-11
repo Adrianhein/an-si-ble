@@ -2,9 +2,9 @@
 
 ### YAML supports :
 	
-	dictionary variable
-	list variable
-	complex variable which use dictionaries and lists both
+	=> dictionary variable
+	=> list variable
+	=> complex variable which use dictionaries and lists both
 
 
 ### dictionary variable:
