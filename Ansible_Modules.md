@@ -44,6 +44,7 @@
 ---    
 
 ## Example Usage of searching module "copy"
+### ansible-doc -l | grep copy
 ### ansible-doc copy
         [admin@my-infra-01 Practice]$ ansible-doc copy
         > ANSIBLE.BUILTIN.COPY    (/usr/lib/python3.9/site-packages/ansible/modules/copy.py)
